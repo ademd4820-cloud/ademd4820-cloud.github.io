@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İyiyim · Destek</title>
+<meta name="description" content="İyiyim uygulaması için yardım, sık sorulan sorular ve iletişim.">
+<style>
+  :root { --bg:#fbfaf7; --fg:#1f2421; --muted:#5d655f; --line:#e4e1d8; --accent:#2f7d5b; --card:#ffffff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#141715; --fg:#e8ebe8; --muted:#a3aba5; --line:#2b302c; --accent:#6cc79d; --card:#1b1f1c; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { margin-bottom: 28px; }
+  .brand { color: var(--accent); font-weight: 700; letter-spacing: .02em; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 6px 0 8px; }
+  h2 { font-size: 1.35rem; margin: 48px 0 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+  h3 { font-size: 1.05rem; margin: 26px 0 6px; }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); font-size: .95rem; }
+  nav { display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+  nav a { color: var(--accent); text-decoration:none; border:1px solid var(--line); border-radius:999px;
+          padding:6px 12px; font-size:.92rem; background: var(--card); }
+  .notice { background: var(--card); border: 1px solid var(--line); border-left: 4px solid #d9822b;
+            border-radius: 10px; padding: 12px 14px; margin: 18px 0; }
+  .contact { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+             border-radius: 10px; padding: 14px 16px; margin: 18px 0; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+            padding: 10px 14px; margin: 10px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  details[open] summary { margin-bottom: 6px; }
+  details p:last-child, details ol:last-child, details ul:last-child { margin-bottom: 4px; }
+  a { color: var(--accent); }
+  ul, ol { padding-left: 1.2rem; }
+  footer { margin-top: 48px; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">İyiyim</div>
+    <h1>Destek</h1>
+    <p class="muted">İyiyim'i kullanırken takıldığın bir yer mi var? Aşağıdaki sorulara göz at ya da bize yaz.</p>
+    <nav>
+      <a href="#nasil">Nasıl çalışır?</a>
+      <a href="#sss">Sık sorulan sorular</a>
+      <a href="#iletisim">İletişim</a>
+      <a href="../gizlilik/">Gizlilik Politikası</a>
+    </nav>
+  </header>
+
+  <div class="notice">
+    <strong>İyiyim bir acil durum servisi değildir.</strong> Bildirimlerin zamanında ulaşacağı garanti edilemez.
+    Acil bir durumda 112'yi arayın.
+  </div>
+
+  <div class="contact">
+    <strong>Bize ulaş:</strong> <a href="mailto:ademd4820@icloud.com?subject=%C4%B0yiyim%20destek">ademd4820@icloud.com</a><br>
+    <span class="muted">Genellikle 2 iş günü içinde dönüş yaparız. Yazarken telefon modelini ve iOS sürümünü
+    eklersen sorunu daha hızlı çözeriz.</span>
+  </div>
+
+  <section id="nasil">
+    <h2>Nasıl çalışır?</h2>
+    <p>İyiyim, yalnız yaşayan kişiler için günlük bir kontrol uygulamasıdır. Her gün tek dokunuşla
+    "İyiyim" dersin. Belirlediğin saate kadar demezsen önce sana bir hatırlatma gelir. Yine yanıt
+    vermezsen seçtiğin kişilere bildirim gönderilir.</p>
+    <ol>
+      <li><strong>Kişini ekle:</strong> Uygulamada <em>Kişi ekle</em>'ye dokun ve oluşan davet kodunu
+      bir yakınınla paylaş.</li>
+      <li><strong>Yakının kodu girer:</strong> Yakının da İyiyim'i indirir, <em>Birini takip et</em>
+      bölümünde kodu girer ve istek gönderir.</li>
+      <li><strong>İsteği onayla:</strong> İstek sana <em>Onay bekleyenler</em>'de görünür.
+      Onayladığında artık seni takip eder.</li>
+      <li><strong>Her gün "İyiyim" de:</strong> Uygulamadaki düğmeye ya da gelen bildirime dokunman yeterli.</li>
+    </ol>
+  </section>
+
+  <section id="sss">
+    <h2>Sık sorulan sorular</h2>
+
+    <h3>Kişiler ve davet kodları</h3>
+    <details>
+      <summary>Yakınımın da İyiyim'i indirmesi gerekiyor mu?</summary>
+      <p>Evet. Uyarılar uygulama bildirimi olarak gönderilir; SMS ya da e-posta gönderilmez. Bu yüzden
+      seni takip edecek kişinin telefonunda İyiyim yüklü ve bildirimleri açık olmalı.</p>
+    </details>
+    <details>
+      <summary>Davet kodu çalışmıyor.</summary>
+      <p>Her kod 12 karakterlidir, 48 saat geçerlidir ve yalnızca bir kez kullanılabilir. Süresi dolmuş,
+      kullanılmış ya da iptal edilmiş bir kod çalışmaz. Böyle bir durumda <em>Kişi ekle</em>'den yeni
+      bir kod oluşturup paylaş.</p>
+    </details>
+    <details>
+      <summary>Bir kişiyi nasıl çıkarırım?</summary>
+      <p><em>Kişilerim</em> listesinde kişiyi sola kaydırıp <em>Çıkar</em>'a dokun. Çıkardığın kişi
+      kontrolünü kaçırdığında artık haber almaz.</p>
+    </details>
+    <details>
+      <summary>Birini takip etmeyi nasıl bırakırım?</summary>
+      <p><em>Takip ettiklerin</em> listesinden kişiyi seçip <em>Takibi bırak</em>'a dokun. Yeniden
+      takip etmek için o kişinin sana yeni bir kod vermesi gerekir.</p>
+    </details>
+
+    <h3>Kontrol ve uyarılar</h3>
+    <details>
+      <summary>Kontrol saatimi nasıl değiştiririm?</summary>
+      <p>Ana ekrandaki ayarlardan <em>Günlük kontrol saati</em>'ni seç ve istediğin saati kaydet.</p>
+    </details>
+    <details>
+      <summary>"İyiyim" demeyi unutursam ne olur?</summary>
+      <p>Kontrol saatin geldiğinde önce sana "İyi misin?" diye bir hatırlatma gelir. Bir süre daha yanıt
+      vermezsen kişilerine uyarı gönderilir. "İyiyim" dediğin anda uyarı kapanır ve kişilerine iyi
+      olduğun bildirilir.</p>
+    </details>
+    <details>
+      <summary>Bir yakınım için uyarı aldım. Ne yapmalıyım?</summary>
+      <p>Onu aramayı dene ya da yanına git. Tehlikede olduğunu düşünüyorsan 112'yi ara. Onunla
+      konuştuysan ya da durumunu öğrendiysen uygulamada <em>Ulaştım</em>'a dokun. Uyarı kapanır ve
+      diğer kişilere senin ulaştığın bildirilir.</p>
+    </details>
+
+    <h3>Bildirimler</h3>
+    <details>
+      <summary>Bildirimler gelmiyor.</summary>
+      <ul>
+        <li><strong>Ayarlar → Bildirimler → İyiyim</strong> yolundan bildirimlere izin verildiğini kontrol et.</li>
+        <li>İnternet bağlantının açık olduğundan emin ol.</li>
+        <li>Uygulamadan çıkış yaptıysan tekrar giriş yap. Çıkış yapılan telefona bildirim gelmez.</li>
+        <li>Sorun sürerse uygulamayı kapatıp yeniden aç.</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Uyku ya da Rahatsız Etme modundayken bildirimler sessiz geliyor.</summary>
+      <p>Odak modları açıkken bildirimler sessizce gelebilir. Önemli hatırlatma ve uyarıların yine de
+      görünmesi için <strong>Ayarlar → Bildirimler → İyiyim</strong> yolundan <em>Zamana Duyarlı
+      Bildirimler</em>'i aç. Uygulamadaki ayarlarda <em>Odak ve bildirim ayarları</em>'na dokunarak bu
+      adımlara tekrar ulaşabilirsin.</p>
+    </details>
+
+    <h3>Hesap</h3>
+    <details>
+      <summary>Hesabımı nasıl silerim?</summary>
+      <p>Uygulamada ana ekrandaki ayarlardan <em>Hesabımı sil</em>'e dokun ve Apple kimliğinle onayla.
+      Hesabın ve ona bağlı tüm bilgiler hemen silinir. Kişilerine ve takip ettiğin kişilere hesabını
+      sildiğine dair bir bildirim gönderilir. Uygulamaya erişemiyorsan bize e-posta ile yaz.</p>
+    </details>
+    <details>
+      <summary>Hangi bilgilerimi topluyorsunuz?</summary>
+      <p>Yalnızca uygulamanın çalışması için gerekenleri: adın, Apple ile girişten gelen e-posta adresin,
+      "İyiyim" kayıtların ve kişi bağlantıların. Konumunu, rehberini ya da sağlık verilerini istemiyoruz;
+      reklam ve izleme aracı kullanmıyoruz. Ayrıntılar için
+      <a href="../gizlilik/">Gizlilik Politikası</a>'na bakabilirsin.</p>
+    </details>
+  </section>
+
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <p>Sorun, öneri ve talepler için:
+    <a href="mailto:ademd4820@icloud.com?subject=%C4%B0yiyim%20destek">ademd4820@icloud.com</a></p>
+    <p class="muted">Kişisel verilerinle ilgili başvurular için
+    <a href="../gizlilik/#kvkk">KVKK Aydınlatma Metni</a>'ne bakabilirsin.</p>
+  </section>
+
+  <footer>© 2026 Adem Demir · İyiyim</footer>
+</main>
+</body>
+</html>
